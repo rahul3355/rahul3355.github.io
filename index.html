@@ -17,6 +17,15 @@
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
+    <script src="assets/js/sendemail.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init("user_ZrV3gbw9s2KRpGituCpdW");
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e02458c715.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body class="is-preload">
@@ -50,6 +59,11 @@
             <article id="work" class="panel">
                 <header style="text-align: center;">
                     <h2 style="font-weight:bold">RESUME</h2>
+                    <br>
+                    <a href="./report_flask.pdf" download="RahulPatil_Resume" style="color: aliceblue;">
+                        <button class="download-btn"> Download Resume
+                            <i style="margin-left: 10px;" class="fa fa-download" aria-hidden="true"></i></button>
+                    </a>
                 </header>
                 <p style="text-align: center; font-family: Consolas; font-size: 20px; line-height: 30px;">
                     A Developer with strong passion for self-improvement.
@@ -142,135 +156,148 @@
             <!-- Work -->
             <article id="projects" class="panel">
                 <header>
-                    <h2>Projects</h2>
+                    <h2 style="font-family: Consolas; font-weight: 900;">Projects</h2>
                 </header>
                 <p style="font-family: Consolas;">
                     Check out my projects below.
                 </p>
                 <section>
                     <div class="row">
-                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="row row-cols-1 row-cols-md-1 g-4">
                             <div class="col">
                                 <div class="card">
-                                    <a href="https://rahul3355.github.io/" target="_blank">
-                                        <img src="images/495970.jpg" class="card-img-top" alt="...">
+                                    <h5 class="card-title" style="font-family: Consolas; margin: 20px;">1. Heart Disease
+                                        Predictor</h5>
+                                    <a href="http://rahulpatil35.pythonanywhere.com/" target="_blank">
+                                        <img src="images/robot06.jpg" class="card-img-top" alt="...">
                                     </a>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a
-                                            natural lead-in to additional
-                                            content. This content is a little bit longer.</p>
+                                    <div class="card-body" style="font-family: Consolas;">
+
+                                        <p class="card-text">A
+                                            website that takes 13 inputs (features) and
+                                            tells them the probability of presence of heart disease with 89% accuracy
+                                            using a machine learning algorithm called Logistic Regression.
+                                        </p>
 
                                     </div>
+                                    <div>
+                                        <div class="row row-cols-2 row-cols-md-2 g-2" style="font-family: Consolas;">
+                                            <div class="col">
+                                                <a href="https://github.com/rahul3355/heartdiseasepredictor/"
+                                                    target="_blank">
+                                                    <button type="button" class="btn btn-outline-primary"
+                                                        style="font-size: larger; margin-left: 40%;">Source Code <i
+                                                            class="fa fa-github"></i></button>
+                                                </a>
+                                            </div>
+                                            <div class="col">
+                                                <a href="http://rahulpatil35.pythonanywhere.com/" target="_blank">
+                                                    <button type="button" class="btn btn-outline-success"
+                                                        style="font-size: larger; margin-left: 10%;">Visit Website <i
+                                                            class="fa fa-cloud"></i></button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                            </div>
+                            <div class="col">
+                                <div class="card">
+
+                                    <h5 class="card-title" style="font-family: Consolas; margin: 20px;">2. Timeline: A
+                                        full-stack MERN Project</h5>
+                                    <a href="https://timeline-project.netlify.app/" target="_blank">
+                                        <img src="images/timeline/timeline01.jpg" class="card-img-top" alt="..."> </a>
+                                    <div class="card-body" style="font-family: Consolas;">
+                                        <p class="card-text">Developed a full-stack social media website for sharing
+                                            snippets among the community using MERN (MongoDB, ExpressJS, ReactJS,
+                                            NodeJS)
+                                            Stack. Deployment of backend using Heroku and frontend using Netlify.</p>
+                                    </div>
+                                    <div>
+                                        <div class="row row-cols-3 row-cols-md-2 g-1" style="font-family: Consolas;">
+                                            <div class="col">
+                                                <a href="https://github.com/rahul3355/timeline/" target="_blank">
+                                                    <button type="button" class="btn btn-outline-primary"
+                                                        style="font-size: larger; margin-left: 40%;">Source Code <i
+                                                            class="fa fa-github"></i></button>
+                                                </a>
+                                            </div>
+                                            <div class="col">
+                                                <a href="https://timeline-project.netlify.app/" target="_blank">
+                                                    <button type="button" class="btn btn-outline-success"
+                                                        style="font-size: larger; margin-left: 10%;">Visit
+                                                        Website <i class="fa fa-cloud"></i></button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="card">
-                                    <img src="images/144855-black_and_red_galaxy_illustration-1920x1080.jpg"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a
-                                            natural lead-in to additional
-                                            content. This content is a little bit longer.</p>
+
+                                    <h5 class="card-title" style="font-family: Consolas; margin: 20px;">3. Community101:
+                                        Group Chat App</h5>
+                                    <a href="https://community101.netlify.app/" target="_blank">
+                                        <img src="images/community101/community101_03.jpg" class="card-img-top"
+                                            alt="..."> </a>
+                                    <div class="card-body" style="font-family: Consolas;">
+                                        <p class="card-text">Developed a full-stack group chat website for users who
+                                            require Google Authentication to participate. Frontend: REACT, Backend:
+                                            Firebase.
+                                            Deployment using Netlify.</p>
                                     </div>
+                                    <div>
+                                        <div class="row row-cols-3 row-cols-md-2 g-1" style="font-family: Consolas;">
+                                            <div class="col">
+                                                <a href="https://github.com/rahul3355/community101" target="_blank">
+                                                    <button type="button" class="btn btn-outline-primary"
+                                                        style="font-size: larger; margin-left: 40%;">Source Code <i
+                                                            class="fa fa-github"></i></button>
+                                                </a>
+                                            </div>
+                                            <div class="col">
+                                                <a href="https://community101.netlify.app/" target="_blank">
+                                                    <button type="button" class="btn btn-outline-success"
+                                                        style="font-size: larger; margin-left: 10%;">Visit
+                                                        Website <i class="fa fa-cloud"></i></button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/463558-solar-system-desktop-wallpaper-art-aesthetic-desktop-wallpaper-computer-wallpaper-desktop-wallpaper.jpg"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a
-                                            natural lead-in to additional
-                                            content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/louis-charavner-flatspace2.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a
-                                            natural lead-in to additional
-                                            content. This content is a little bit longer.</p>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
-                        <div class="row row-cols-1 row-cols-md-2 g-4">
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/495970.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a
-                                            natural lead-in to additional
-                                            content. This content is a little bit longer.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/144855-black_and_red_galaxy_illustration-1920x1080.jpg"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a
-                                            natural lead-in to additional
-                                            content. This content is a little bit longer.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/463558-solar-system-desktop-wallpaper-art-aesthetic-desktop-wallpaper-computer-wallpaper-desktop-wallpaper.jpg"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a
-                                            natural lead-in to additional
-                                            content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/louis-charavner-flatspace2.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a
-                                            natural lead-in to additional
-                                            content. This content is a little bit longer.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </section>
             </article>
 
             <!-- Contact -->
             <article id="contact" class="panel">
                 <header>
-                    <h2>Contact Me</h2>
+                    <h2 style="font-family: Consolas;">Contact Me</h2>
                 </header>
-                <form action="#" method="post">
+                <br>
+                <form action="https://formsubmit.co/rahulpatil33553@gmail.com" method="POST">
                     <div>
                         <div class="row">
                             <div class="col-6 col-12-medium">
-                                <input type="text" name="name" placeholder="Name" />
+                                <label for="fromName" class="form-label">Name</label>
+                                <input type="text" name="name" id="fromName" required />
                             </div>
                             <div class="col-6 col-12-medium">
-                                <input type="text" name="email" placeholder="Email" />
+                                <label for="fromEmail" class="form-label">E-mail</label>
+                                <input type="text" name="email" id="fromEmail" required />
                             </div>
+
                             <div class="col-12">
-                                <input type="text" name="subject" placeholder="Subject" />
-                            </div>
-                            <div class="col-12">
-                                <textarea name="message" placeholder="Message" rows="6"></textarea>
+                                <label for="fromName" class="form-label">Message</label>
+                                <textarea name="message" id="fromMessage" rows="6" required></textarea>
                             </div>
                             <div class="col-12">
                                 <input type="submit" value="Send Message" />
@@ -278,18 +305,12 @@
                         </div>
                     </div>
                 </form>
+
+
             </article>
 
-        </div>
 
-        <!-- Footer -->
-        <div id="footer">
-            <ul class="copyright">
-                <li></li>
-                <li><a href="http://html5up.net"></a></li>
-            </ul>
         </div>
-
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
